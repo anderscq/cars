@@ -1,0 +1,19 @@
+.main-header {
+  width: 100%;
+  background: #222;
+  color: #ccc;
+  padding: 16px 32px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1200;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.main-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: left;
+}

@@ -40,3 +40,34 @@
 .read-the-docs {
   color: #888;
 }
+
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1100;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #222;
+  cursor: pointer;
+}
+
+@media (min-width: 769px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+.content {
+  margin-left: 220px;
+  padding: 40px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0;
+    padding: 80px 20px 20px 20px;
+  }
+}
