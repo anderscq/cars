@@ -1,13 +1,15 @@
 import "./App.css";
 import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/header/Header";
 import Sidebar from "./components/sidebar/Sidebar";
 import Carousel from "./components/carousel/Carousel";
+import List from "./pages/manufacturers/List";
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
-    <>
+    <BrowserRouter>
       <Header />
       <div>
         <button
@@ -18,10 +20,13 @@ function App() {
         </button>
         <Sidebar open={sidebarOpen} />
         <div className="content">
-          <Carousel />
+          <Routes>
+            <Route path="/" element={<Carousel />} />
+            <Route path="/manufacturers" element={<List />} />
+          </Routes>
         </div>
       </div>
-    </>
+    </BrowserRouter>
   );
 }
 

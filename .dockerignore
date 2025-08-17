@@ -1,0 +1,33 @@
+node_modules
+dist
+build
+.vscode
+.idea
+.DS_Store
+.git
+.gitignore
+
+# arquivos de ambiente locais (não enviar segredos)
+.env
+.env.*
+.env.local
+.env.development.local
+.env.production.local
+
+# logs e cache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+.cache
+coverage
+tmp
+
+# empacotados / artefatos
+*.tgz
+
+# ignorar arquivos gerados pelo sistema/IDE
+.vs/
+
+car-logos-website.txt

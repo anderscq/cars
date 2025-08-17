@@ -1,23 +1,18 @@
 import "./Sidebar.css";
+import { NavLink } from "react-router-dom";
 
-function Sidebar({ open, onClose }) {
+function Sidebar({ open }) {
   return (
-    <nav className={`sidebar ${open ? "open" : ""}`}>
+    <div className={`sidebar ${open ? "open" : ""}`}>
       <ul>
         <li>
-          <a href="#">Início</a>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <a href="#">Montadoras</a>
-        </li>
-        <li>
-          <a href="#">Carros</a>
-        </li>
-        <li>
-          <a href="#">Sobre</a>
+          <NavLink to="/manufacturers">Manufacturers</NavLink>
         </li>
       </ul>
-    </nav>
+    </div>
   );
 }
 
